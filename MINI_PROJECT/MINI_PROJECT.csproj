@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA3650A8-6CD5-4D76-949F-38499931EF2A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MINI_PROJECT</RootNamespace>
+    <AssemblyName>MINI_PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ABOUT_US.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ADMIN\ADD_STAFF.aspx" />
+    <Content Include="ADMIN\ADD_SUBJECT.aspx" />
+    <Content Include="ADMIN\ADMIN_HOME.aspx" />
+    <Content Include="ADMIN\SATFF_REPORT.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\books_main_image.jpg" />
+    <Content Include="Images\main.jpg" />
+    <Content Include="Images\MINI LOGO.jpg" />
+    <Content Include="Images\MINI_BIG.JPG" />
+    <Content Include="Images\My Post.jpg" />
+    <Content Include="Images\TASK BAR LOGO.jpg" />
+    <Content Include="LEAVE_REQ.aspx" />
+    <Content Include="HOME.aspx" />
+    <Content Include="LOGIN_ADMIN.aspx" />
+    <Content Include="LOGIN_STAFF.aspx" />
+    <Content Include="STAFF\ADD_STUDENTS.aspx" />
+    <Content Include="STAFF\CONTACT_US.aspx" />
+    <Content Include="STAFF\STAFF_LOGIN.aspx" />
+    <Content Include="STAFF_REG.aspx" />
+    <Content Include="STUDENTS\ATTENDANCE_REPORT.aspx" />
+    <Content Include="STUDENTS\LEAVE_REQUEST.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="STYLE\ABOUT_US.css" />
+    <Content Include="STYLE\ADMIN_LOGIN.css" />
+    <Content Include="STYLE\STAFF_LOGIN.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABOUT_US.aspx.cs">
+      <DependentUpon>ABOUT_US.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABOUT_US.aspx.designer.cs">
+      <DependentUpon>ABOUT_US.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ADD_STAFF.aspx.cs">
+      <DependentUpon>ADD_STAFF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ADD_STAFF.aspx.designer.cs">
+      <DependentUpon>ADD_STAFF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ADD_SUBJECT.aspx.cs">
+      <DependentUpon>ADD_SUBJECT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ADD_SUBJECT.aspx.designer.cs">
+      <DependentUpon>ADD_SUBJECT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ADMIN.Master.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ADMIN.Master.designer.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ADMIN_HOME.aspx.cs">
+      <DependentUpon>ADMIN_HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ADMIN_HOME.aspx.designer.cs">
+      <DependentUpon>ADMIN_HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\SATFF_REPORT.aspx.cs">
+      <DependentUpon>SATFF_REPORT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\SATFF_REPORT.aspx.designer.cs">
+      <DependentUpon>SATFF_REPORT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LEAVE_REQ.aspx.cs">
+      <DependentUpon>LEAVE_REQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LEAVE_REQ.aspx.designer.cs">
+      <DependentUpon>LEAVE_REQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.aspx.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME.aspx.designer.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_ADMIN.aspx.cs">
+      <DependentUpon>LOGIN_ADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN_ADMIN.aspx.designer.cs">
+      <DependentUpon>LOGIN_ADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_STAFF.aspx.cs">
+      <DependentUpon>LOGIN_STAFF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN_STAFF.aspx.designer.cs">
+      <DependentUpon>LOGIN_STAFF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF\ADD_STUDENTS.aspx.cs">
+      <DependentUpon>ADD_STUDENTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF\ADD_STUDENTS.aspx.designer.cs">
+      <DependentUpon>ADD_STUDENTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF\CONTACT_US.aspx.cs">
+      <DependentUpon>CONTACT_US.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF\CONTACT_US.aspx.designer.cs">
+      <DependentUpon>CONTACT_US.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF\STAFF.Master.cs">
+      <DependentUpon>STAFF.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF\STAFF.Master.designer.cs">
+      <DependentUpon>STAFF.Master</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF\STAFF_LOGIN.aspx.cs">
+      <DependentUpon>STAFF_LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF\STAFF_LOGIN.aspx.designer.cs">
+      <DependentUpon>STAFF_LOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_REG.aspx.cs">
+      <DependentUpon>STAFF_REG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_REG.aspx.designer.cs">
+      <DependentUpon>STAFF_REG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTS\ATTENDANCE_REPORT.aspx.cs">
+      <DependentUpon>ATTENDANCE_REPORT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STUDENTS\ATTENDANCE_REPORT.aspx.designer.cs">
+      <DependentUpon>ATTENDANCE_REPORT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTS\LEAVE_REQUEST.aspx.cs">
+      <DependentUpon>LEAVE_REQUEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STUDENTS\LEAVE_REQUEST.aspx.designer.cs">
+      <DependentUpon>LEAVE_REQUEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTS\STUDENTS.Master.cs">
+      <DependentUpon>STUDENTS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STUDENTS\STUDENTS.Master.designer.cs">
+      <DependentUpon>STUDENTS.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="STYLE\ADMIN\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMIN\ADMIN.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STUDENTS\STUDENTS.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STAFF\STAFF.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4810</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
